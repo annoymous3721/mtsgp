@@ -10,7 +10,7 @@ seed = 0
 numpy.random.seed(seed)
 # Read the CSV file that generated in Rscript
 df = pd.read_csv('cluster.csv')
-target = pd.read_csv('/Users/wancen/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatChapelHill/Lab/GRA/lima/target.csv')
+target = pd.read_csv('target.csv')
 # dtw results
 X = np.array(df).reshape((9, 50, 1))
 target = np.array(target).reshape((1, 50, 1))
